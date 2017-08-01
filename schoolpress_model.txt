@@ -1,0 +1,27 @@
+Virtual school/colledge/uni
+
+1. Classes
+   - Author : Teacher
+   - Subject: php, wordpress AS TAXONOMIES
+   - using buddyPress plugin to mange groups, chatting etc
+
+2. Teachers
+   - OwAuthor of classes, Homework/assignemnts
+   - Can invite student by sending mail from template form on class homepage.
+   - given membership roles using 'paid menmbershipPro'
+ 
+3. Student:
+   - login for particular class
+   - student user created by Teacher
+   - Student can subscribe to Class, Assignments/homework
+   - can submit assignments
+   - when logged in to class can view its submitted and pendingassignements
+   - given 'subscriber role'
+4. admin
+   - superuser
+
+5. Assignment/Homework
+
+6. Submission
+    - is sub post type of assignment/HW
+    - using post_parent field   
