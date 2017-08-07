@@ -25,3 +25,14 @@ Virtual school/colledge/uni
 6. Submission
     - is sub post type of assignment/HW
     - using post_parent field   
+
+
+7. Design Flow:
+   a. A nice and simple FE page for login and registeration made.
+      - a template register-form already provided in schoolpress theme
+   b. Admin and Teacher user created . via dashboard
+   c. Students registered via Front end web page Form
+        - css, JS and some ajax can be used p-241
+        - mail to student will be sentfor confirmation
+        - a confirmation link might be provided
+        - student will then be added as user with certain role and cap.

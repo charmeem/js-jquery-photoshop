@@ -3,7 +3,7 @@
  * Table of Contents
  *
  * mmm          - a Sample 
- * contact_form - A Contact Form with validation and sanitation
+ * contact_form - A Contact Form with email sending with validation and sanitation
  * list_cpt     - List Custom post types
  * list_cpt2     - List Custom post types
  * submission_form - Homework submission form

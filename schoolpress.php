@@ -16,8 +16,8 @@ define("PMPRO_NETWORK_MANAGE_SITES_SLUG", "manage-sites");
 define("SP_DIR", dirname(__FILE__));
 require_once(SP_DIR . "/includes/functions.php");			//misc functions used by the plugin
 require_once(SP_DIR . "/includes/widgets.php");			//my custom widgets @mmm
-require_once(SP_DIR . "/includes/sidebars.php");			//my custom sidebars @mmm
-require_once(SP_DIR . "/includes/dashboard.php");			//my custom dashboard widgets @mmm
+//require_once(SP_DIR . "/includes/sidebars.php");			//my custom sidebars @mmm
+//require_once(SP_DIR . "/includes/dashboard.php");			//my custom dashboard widgets @mmm
 require_once(SP_DIR . "/scheduled/crons.php");//crons for expiring members, sending expiration emails, etc
 
 //Loading Classes
@@ -40,3 +40,10 @@ function sp_activation()
 	add_action('init', array('SPClass', 'createVisibilities'), 20);
 }
 register_activation_hook(__FILE__, 'sp_activation');
+
+// Enqueue jQuery
+function sp_enqueue_scripts()
+{
+    wp_enqueue_script('jquery');
+}
+add_action('init', 'sp_enqueue_scripts');

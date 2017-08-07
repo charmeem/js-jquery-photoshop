@@ -95,5 +95,59 @@ if(!function_exists('pmpro_bbp_is_forum'))
 	}
 }
 
-
+/**
+ * Ajax username server side code
+ */
  
+//detect AJAX request for check_username
+function wp_ajax_check_username() 
+{
+    global $wpdb;
+	$username = $_REQUEST['username'];
+	$taken = $wpdb->get_var( "
+        SELECT user_login
+        FROM $wpdb->users
+        WHERE user_login = '" . esc_sql( $username ) . "' LIMIT 1"
+    );
+	
+    if ( $taken )
+        echo '1'; //taken
+	else
+        echo '2'; //available
+}
+add_action( 'wp_ajax_check_username', 'wp_ajax_check_username' );
+//add_action( 'wp_ajax_nopriv_check_username', 'wp_ajax_check_username' );	
+
+
+/**
+ * Theme my Login
+ * Changing Action Links
+ *
+function tml_action_url( $url, $action, $instance ) {
+	//var_dump($action);
+	if ( ('register' && 'lostpassword') == $action ) {
+		//echo "SORRRYYY";		
+		$url = plugins_url() . '/theme-my-login/templates/ms-signup-user-form.php' ;
+	    return $url;
+		}
+	
+	elseif ( 'login' == $action ) {
+		//echo "SORRR";
+	    $url = get_stylesheet_directory() . '/login-form.php' ;
+		
+		return $url;
+	}
+	elseif ( 'logout' == $action ) {
+		$url = get_stylesheet_directory() . '/login-form.php';
+	    return $url;
+	}
+	else {echo "SORRRYYY!!!";
+	
+	}
+	      
+	
+}
+add_filter( 'tml_action_url', 'tml_action_url', 10, 3 );
+*/
+
+//echo count($assignment->submissions);?> 
