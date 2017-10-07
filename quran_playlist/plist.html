@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Playlist</title>
+	
+	<!--div margin setting helps in to center the children -->
+	<style>
+		
+	    .wrapper {
+		    max-width:1200px;
+			margin: 40px auto;
+			#border:2px dashed red;
+		}
+		h2, #buttons {
+		    background-color: steelblue;
+			text-align:center;
+			
+		}
+		h2, li, #buttons {
+		    padding:10px;
+		    border-radius:2px;
+			margin:0px;
+		}
+		#plist{
+		    margin:0px;
+			padding:0px;
+		}
+		
+				
+		.current {
+		    background-color: lightblue;
+		}
+		
+		
+		li {
+		    
+		    text-align: left;
+		}
+		span {
+		    position:absolute;
+		    right:10%;
+		    display:inline-block;
+		    width:80%;
+		    text-align:right;
+		}
+		button {
+		    margin:0px 10px;
+			padding: 5px 25px;
+			border-radius: 7px;
+			border:0px;
+			
+		}
+		
+	</style>
+</head>
+<body>
+  <div class = "wrapper">
+	<h2>Playlist</h2>
+	<ol id = "plist">
+	    
+	</ol>
+  <div id = "buttons">	
+	<button id= "play">Play</button>
+	<button id = "next">Next</button>
+	<button id = "stop">Stop</button>
+  </div>
+  </div>
+<script src="surah.js"></script>
+<script src="recitelist.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
