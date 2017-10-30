@@ -6,7 +6,7 @@ Description: Core SchoolPress Plugin
 Version: .6
 Author: Jason Coleman, Brian Mesenlehner
 
-Customization done by: Muhamamd Mubashir Mufti (mmm)
+Customization done by: Muhammad Mubashir Mufti (mmm)
 
 */
 
