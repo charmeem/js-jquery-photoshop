@@ -5,7 +5,11 @@ Plugin URI: http://schoolpress.me
 Description: Core SchoolPress Plugin
 Version: .6
 Author: Jason Coleman, Brian Mesenlehner
+
+Customization done by: Muhamamd Mubashir Mufti (mmm)
+
 */
+
 //version constant
 define("SP_VERSION", ".6");
 define("PMPRO_NETWORK_MANAGE_SITES_SLUG", "manage-sites");
