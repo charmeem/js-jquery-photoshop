@@ -36,3 +36,7 @@ Virtual school/colledge/uni
         - mail to student will be sentfor confirmation
         - a confirmation link might be provided
         - student will then be added as user with certain role and cap.
+8. Adds on
+   a. Create Widget for Twitter REST API
+      and include it in the SIDEBAR
+   

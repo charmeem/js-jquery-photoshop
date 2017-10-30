@@ -97,6 +97,7 @@ if(!function_exists('pmpro_bbp_is_forum'))
 
 /**
  * Ajax username server side code
+ * The client side ajax code is included in mm-signup-user-form in theme directory
  */
  
 //detect AJAX request for check_username
@@ -150,4 +151,17 @@ function tml_action_url( $url, $action, $instance ) {
 add_filter( 'tml_action_url', 'tml_action_url', 10, 3 );
 */
 
-//echo count($assignment->submissions);?> 
+//echo count($assignment->submissions);
+
+//echo ($_SERVER['REQUEST_URI']);
+//echo ABSPATH; 
+//$one = get_stylesheet_directory();
+//$two = get_stylesheet_directory_uri();
+//$three = get_template_directory();
+//$for = plugin_dir_url(__FILE__);
+
+
+//var_dump($one);
+//var_dump($two);
+//var_dump($three);
+//var_dump($for);

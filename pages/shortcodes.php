@@ -7,6 +7,7 @@
  * list_cpt     - List Custom post types
  * list_cpt2     - List Custom post types
  * submission_form - Homework submission form
+ * twitter         - twitter API
  *
  */
 
@@ -123,7 +124,9 @@ global $cname, $lname, $email, $message, $phone;
 ?>
 <div id="wrapper">
 <div id="content">
+
 <?php print_message(); //print message?> 
+
 <form class="general" action="<?php the_permalink(); ?>" method="post">
 <div class="form-row">
 <label for="cname">Name</label>
@@ -248,7 +251,6 @@ add_shortcode('list_cpt2', 'list_cpt2_shortcode');
 function list_cpt2_shortcode()
 {    
      $gpt = get_post_types();
-	 var_dump($gpt);
 	 
      $mycustom_posts = get_posts( array (
 	        'post_type' => 'any', 'numberposts' => 100));
@@ -381,4 +383,19 @@ function submission_form_shortcode()
 	//}
 }
  
+
+/**
+ * twitter
+ *
+ * Twitter search list - using only for testing
+ */
+
+ add_shortcode('twitter_api', 'twitter_shortcode');
+ function twitter_shortcode()
+ {    
+    // add_action('init', 'toto');
+	 //function toto (){
+         require_once(SP_DIR . "/includes/twitter_login.php"); //including twitter login file
+	 //}
+ } 
  
