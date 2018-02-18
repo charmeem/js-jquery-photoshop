@@ -1,0 +1,19 @@
+inspiration:
+   griffin inn : menu and thumbnail style
+corner music: menu logo placement
+safe guard
+----------
+font type:
+header font size:
+menu font size:
+header size:
+Aktiviteter Kalas Restauranger Grupper & Konferens Information Boka  
+öppettider : Mån-Tor 10-23 & Fre-Sön 10-24
+logga in Registrera information
+spännande dinosaurieland
+I vår dinosaurievärld kan du lära dig allt om olika arter och hur de levde genom film, informationstavlor och dinosaurier i deras verkliga storlekar
+--------
+
+hero area size:
+hero font sizes:
+hero picyure fade from bottom
